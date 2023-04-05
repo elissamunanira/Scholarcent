@@ -17,9 +17,9 @@ class PageController extends Controller
         $posts1 = Post::orderBy('created_at','desc')->paginate(6);
         $scholarshipPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(4);
         $internshipPosts = Post::orderBy('created_at','desc')->where('branch_name', 'internship')->paginate(4);
-        $coursesPosts = Post::orderBy('created_at','desc')->where('branch_name', 'courses')->paginate(6);
-        $jobPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
-        $continentPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
+        $coursesPosts = Post::orderBy('created_at','desc')->where('branch_name', 'courses')->paginate(3);
+        $jobPosts = Post::orderBy('created_at','desc')->where('branch_name', 'jobs')->paginate(4);
+        $continentPosts = Post::orderBy('created_at','desc')->where('branch_name', 'continent')->paginate(4);
         $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
         return view('home.indexx', compact('posts','posts1','scholarshipPosts','internshipPosts','coursesPosts','jobPosts','continentPosts','recentPosts','branches'));
     }
