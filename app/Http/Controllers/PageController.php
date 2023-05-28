@@ -14,10 +14,14 @@ class PageController extends Controller
         // $posts = Post::with('images')->get();
         $branches = Branch::all();
         $posts = Post::orderBy('created_at','desc')->paginate(6);
-        $posts1 = Post::orderBy('created_at','desc')->paginate(2);
-        $posts2 = Post::orderBy('created_at','desc')->paginate(1);
-        $posts3 = Post::orderBy('created_at','desc')->paginate(2);
-        return view('home.index', compact('posts','posts1','posts2','posts3','branches'));
+        $posts1 = Post::orderBy('created_at','desc')->paginate(6);
+        $scholarshipPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(4);
+        $internshipPosts = Post::orderBy('created_at','desc')->where('branch_name', 'internship')->paginate(4);
+        $coursesPosts = Post::orderBy('created_at','desc')->where('branch_name', 'courses')->paginate(6);
+        $jobPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
+        $continentPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
+        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        return view('home.index', compact('posts','posts1','scholarshipPosts','internshipPosts','coursesPosts','jobPosts','continentPosts','recentPosts','branches'));
     }
 
     public function about()
@@ -46,8 +50,33 @@ class PageController extends Controller
     //start of filtering projects functions 
 
     public function scholarship(){
-        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->get();
-        return view("home.blog",compact('posts'));
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(9);
+        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        return view("home.blogs",compact('posts','recentPosts'));
+    }
+
+    public function internship(){
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'internship')->paginate(9);
+        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        return view("home.blogs",compact('posts','recentPosts'));
+    }
+
+    public function jobs(){
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'jobs')->paginate(9);
+        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        return view("home.blogs",compact('posts','recentPosts'));
+    }
+
+    public function courses(){
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'courses')->paginate(9);
+        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        return view("home.blogs",compact('posts','recentPosts'));
+    }
+
+    public function continent(){
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'continent')->paginate(9);
+        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        return view("home.blogs",compact('posts','recentPosts'));
     }
 
 }

@@ -58,29 +58,14 @@
 							<a href="/" class="logo m-0 float-start">SCHOLARCENT</a>
 						</div>
 						<div class="col-8 text-center">
-							{{-- <form action="#" class="search-form d-inline-block d-lg-none">
-								<input type="text" class="form-control" placeholder="Search...">
-								<span class="bi-search"></span>
-							</form> --}}
 
 							<ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
 								<li class="active"><a href="/">Home</a></li>
-								<li class="has-children">
-									<a href="category.html">Scholarship</a>
-									<ul class="dropdown">
-									<li>
-										{{-- @foreach ($branches as $branch)
-										<a href="{{url('/blog',$branch->id)}}">
-										{{ $branch->branch_name }}
-										@endforeach --}}
-									</li> 
-									</ul>
-								</li>
 								<li><a href="/category/scholarship">Scholarship</a></li>
-								<li><a href="category.html">Internship</a></li>
-								<li><a href="category.html">Jobs</a></li>
-								<li><a href="category.html">Courses</a></li>
-								<li><a href="category.html">Continent</a></li>
+								<li><a href="/category/internship">Internship</a></li>
+								<li><a href="/category/jobs">Jobs</a></li>
+								<li><a href="/category/courses">Courses</a></li>
+								<li><a href="/category/continent">Continent</a></li>
 							</ul>
 						</div>
 						<div class="col-2 text-end">
@@ -125,20 +110,12 @@
 						<h3 class="mb-4">Quick Links</h3>
 						<ul class="list-unstyled float-start links">
 							<li><a href="#">Home</a></li>
-							<li><a href="#">Scholarship</a></li>
-							<li><a href="#">Internship</a></li>
-							<li><a href="#">Jobs</a></li>
-							<li><a href="#">Courses</a></li>
-							<li><a href="#">Continent</a></li>
+							<li><a href="/category/scholarship">Scholarship</a></li>
+							<li><a href="/category/internship">Internship</a></li>
+							<li><a href="/category/jobs">Jobs</a></li>
+							<li><a href="/category/courses">Courses</a></li>
+							<li><a href="/category/continent">Continent</a></li>
 						</ul>
-						{{-- <ul class="list-unstyled float-start links">
-							<li><a href="#">Partners</a></li>
-							<li><a href="#">Business</a></li>
-							<li><a href="#">Careers</a></li>
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Creative</a></li>
-						</ul> --}}
 					</div> <!-- /.widget -->
 				</div> <!-- /.col-lg-4 -->
 				<div class="col-lg-4">
@@ -146,7 +123,7 @@
 						<h3 class="mb-4">Recent Post Entry</h3>
 						<div class="post-entry-footer">
 							<ul>
-								@foreach($posts as $post)
+								@foreach($recentPosts as $post)
 								<li>
 									<a href="">
 										<img src="/storage/images/{{$post->cover_image}}" alt="Image placeholder" class="me-4 rounded">

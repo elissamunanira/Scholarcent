@@ -34,6 +34,10 @@ Route::get('/blog', [App\Http\Controllers\PageController::class, 'blog']);
 Route::get('/blog/{branches}', [App\Http\Controllers\PostsController::class, 'branchBlog']);
 
 Route::get('/category/scholarship', [App\Http\Controllers\PageController::class, 'scholarship']);
+Route::get('/category/internship', [App\Http\Controllers\PageController::class, 'internship']);
+Route::get('/category/jobs', [App\Http\Controllers\PageController::class, 'jobs']);
+Route::get('/category/courses', [App\Http\Controllers\PageController::class, 'courses']);
+Route::get('/category/continent', [App\Http\Controllers\PageController::class, 'continent']);
 
 Auth::routes();
 
