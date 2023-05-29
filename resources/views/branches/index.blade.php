@@ -4,7 +4,7 @@
 
 <div class="container">
     <center><h2>The created Categories</h2></center>
-    <a href="/branches/create" class="btn btn-success">ADD NEW BRANCH</a>
+    <a href="/branches/create" class="btn btn-success">ADD NEW CATEGORY</a>
     <table class="table table-bordered">
       {{-- <table id="myTable" class="table table-striped" style="width:100%"> --}}
         <thead>
