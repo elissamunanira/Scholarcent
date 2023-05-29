@@ -6,8 +6,8 @@
     <form action= "{{url('branches')}}" method="post" enctype="multipart/form-data">
         {!! csrf_field() !!}
         <div class="form-group">
-            {{Form::label('branch_name', 'branch_name')}}
-            {{Form::text('branch_name','' ,['class' => 'form-control', 'placeholder' => 'branch_name'])}}
+            {{Form::label('category', 'branch_name')}}
+            {{Form::text('branch_name','' ,['class' => 'form-control', 'placeholder' => 'category'])}}
          </div>
          <div class="form-group">
            {{ Form::label('campus', 'Description')}}
