@@ -152,6 +152,8 @@
 					</a>
 				</div> --}}
 
+				@foreach($jobPosts as $post)
+
 				<div class="col-md-6">
 
 					<a href="/posts/{{$post->id}}" class="hentry img-2 v-height mb30 gradient">
@@ -180,6 +182,7 @@
 					</div>   --}}
 
 				</div>
+				@endforeach
 			</div>
 
 		</div>
