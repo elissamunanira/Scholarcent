@@ -70,7 +70,7 @@
                 <div class="inner">
                   <h3>{{$branchesCount}}</h3>
   
-                  <p>Branches</p>
+                  <p>Categories</p>
                 </div>
                 <div class="icon">
                   <i class="fas fa-code-branch"></i>
