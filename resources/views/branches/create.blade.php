@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h1>Create Branch</h1>
+    <h1>Create New category</h1>
     <form action= "{{url('branches')}}" method="post" enctype="multipart/form-data">
         {!! csrf_field() !!}
         <div class="form-group">
