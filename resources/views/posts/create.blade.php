@@ -8,7 +8,7 @@
         <div class="form-group col-md-6">
             <label for="title">Branch:</label>
                 <select name="branch_name" class="form-control">
-                    <option value="">--- Select category ---</option>
+                    <option value="">-- Select category --</option>
                     @foreach ($branches as $branch)
                         <option value="{{ $branch->id }}">{{ $branch->branch_name }} </option>">
                     @endforeach
