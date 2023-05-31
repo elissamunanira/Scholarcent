@@ -13,7 +13,7 @@ class PageController extends Controller
     {
         // $posts = Post::with('images')->get();
         $branches = Branch::all();
-        $posts = Post::orderBy('created_at','desc')->paginate(6);
+        $Posts = Post::orderBy('created_at','desc')->paginate(6);
         $posts1 = Post::orderBy('created_at','desc')->paginate(6);
         $scholarshipPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(4);
         $internshipPosts = Post::orderBy('created_at','desc')->where('branch_name', 'internship')->paginate(4);
