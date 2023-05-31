@@ -140,10 +140,10 @@ class PostsController extends Controller
     {
         //
         $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
-        $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
+        $posts = Post::orderBy('created_at','desc')->paginate(4);
         $branches = Branch::all();
         $post = Post::find($id);
-        return view('home.single',compact('recentPosts','branches','post'));
+        return view('home.single',compact('posts','recentPosts','branches','post'));
     }
 
     /**
