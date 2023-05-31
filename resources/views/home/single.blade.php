@@ -27,7 +27,7 @@
           <div class="post-content-body">
             <p>{{$post->body}}</p>
           </div>
-          <p><a href="single.html" class="btn btn-sm btn-outline-primary">Join Our Whatsapp Group</a></p>
+          <p><a href="/posts/{{$post->id}}" class="btn btn-sm btn-outline-primary">Join Our Whatsapp Group</a></p>
       </div>
     </div>
     <hr>
