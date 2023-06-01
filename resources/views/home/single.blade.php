@@ -58,7 +58,7 @@
 				@foreach($posts as $post)
         <div class="col-md-6 col-lg-3">
           <div class="blog-entry">
-            <a href="single.html" class="img-link">
+            <a href="/posts/{{$post->id}}" class="img-link">
               <img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid">
             </a>
             <span class="date">{{$post->created_at}}</span>
