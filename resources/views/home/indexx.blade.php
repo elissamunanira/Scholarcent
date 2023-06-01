@@ -38,7 +38,7 @@
 						<div class="col-md-6">
 							<div class="blog-entry">
 								<a href="/posts/{{$post->id}}" class="img-link">
-									<img src="/home/images/img_1_sq.jpg" alt="Image" class="img-fluid">
+									<img src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid">
 								</a>
 								<span class="date">{{$post->created_at}}</span>
 								<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
