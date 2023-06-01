@@ -16,8 +16,8 @@
               <p>{{ Str::limit(strip_tags($post->body), 150, '...') }}</p>
               <p><a href="/posts/{{$post->id}}" class="btn btn-sm btn-outline-primary">Read More</a></p>
             </div>
+            @endforeach
           </div>
-      @endforeach
         </div>
       </div>
     </div>
