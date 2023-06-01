@@ -21,7 +21,7 @@ class PageController extends Controller
         $jobPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
         $continentPosts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
         $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
-        return view('home.index', compact('posts','posts1','scholarshipPosts','internshipPosts','coursesPosts','jobPosts','continentPosts','recentPosts','branches'));
+        return view('home.indexx', compact('posts','posts1','scholarshipPosts','internshipPosts','coursesPosts','jobPosts','continentPosts','recentPosts','branches'));
     }
 
     public function about()
