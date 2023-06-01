@@ -201,7 +201,7 @@ class PostsController extends Controller
             //Filename to store
             $fileNameToStore = $filename. '_'.time().'.'.$extension;
             //upload image
-            $path = $request->file('cover_image')->saveAs('public/images/',$fileNameToStore);
+            $path = $request->file('cover_image')->storeAs('public/images/',$fileNameToStore);
         }
         //updating post
  

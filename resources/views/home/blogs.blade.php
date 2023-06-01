@@ -6,8 +6,8 @@
       
       <div class="row posts-entry">
         <div class="col-lg-8">
-      @foreach($posts as $post)
           <div class="blog-entry d-flex blog-entry-search-item">
+            @foreach($posts as $post)
             <a href="/posts/{{$post->id}}" class="img-link me-4">
             <img style="width :100%"src="/storage/images/{{$post->cover_image}}"></a>
             <div>
