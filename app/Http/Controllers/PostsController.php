@@ -273,7 +273,7 @@ class PostsController extends Controller
 
     public function branchBlog(Branch $branches){ 
         $posts = Post::orderBy('created_at','desc')->where('branch_name', $branches->branch_name)->paginate(6);
-        return view('home.blogy', compact('branches', 'posts'));
+        return view('home.bloggy', compact('branches', 'posts'));
     }
   
 }
