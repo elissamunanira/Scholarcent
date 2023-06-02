@@ -38,7 +38,7 @@
 
 						<div class="text">
 							<span class="date">{{$post->created_at}}</span>
-							<h2>Startup vs corporate: What job suits you best?</h2>
+							<h2>{{$post->title}}</h2>
 						</div>
 					</a>
 				</div>
