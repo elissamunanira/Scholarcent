@@ -34,7 +34,7 @@
 				<div class="col-md-4">
 					<a href="/posts/{{$post->id}}" class="h-entry mb-30 v-height gradient">
 
-						<div class="featured-img" style="background-image: url('/home/images/img_3_horizontal.jpg');"></div>
+						<div class="featured-img" style="background-image: url('{{ asset('/storage/images/' . $post->cover_image) }}');"></div>
 
 						<div class="text">
 							<span class="date">{{$post->created_at}}</span>
