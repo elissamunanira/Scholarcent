@@ -37,7 +37,7 @@
 						<div class="featured-img" style="background-image: url('/home/images/img_3_horizontal.jpg');"></div>
 
 						<div class="text">
-							<span class="date">Apr. 14th, 2022</span>
+							<span class="date">{{$post->created_at}}</span>
 							<h2>Startup vs corporate: What job suits you best?</h2>
 						</div>
 					</a>
