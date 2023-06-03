@@ -19,7 +19,7 @@
 				@endforeach
 				@foreach($posts1 as $post)
 				<div class="col-md-4">
-					<a href="single.html" class="h-entry img-5 h-100 gradient">
+					<a href="/posts/{{$post->id}}" class="h-entry img-5 h-100 gradient">
 
 						<div class="featured-img" style="background-image: url('/home/images/img_1_vertical.jpg');"></div>
 
