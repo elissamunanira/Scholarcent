@@ -19,9 +19,8 @@
         </div>
       </div>
     </div>
-
-        <div class="row bt"> 
-            {{$posts->links()}} 
-        </div>
+    <div class="row bt"> 
+        {{$posts->links()}} 
     </div>
+</div>
 @endsection

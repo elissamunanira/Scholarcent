@@ -14,7 +14,10 @@ class PageController extends Controller
         // $posts = Post::with('images')->get();
         $branches = Branch::all();
         $posts = Post::orderBy('created_at','desc')->paginate(6);
-        return view('home.index', compact('posts','branches'));
+        $posts1 = Post::orderBy('created_at','desc')->paginate(2);
+        $posts2 = Post::orderBy('created_at','desc')->paginate(1);
+        $posts3 = Post::orderBy('created_at','desc')->paginate(1);
+        return view('home.index', compact('posts','posts1','posts2','posts3','branches'));
     }
 
     public function about()

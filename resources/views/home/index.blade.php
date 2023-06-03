@@ -4,7 +4,7 @@
 	<section class="section bg-light">
 		<div class="container">
 			<div class="row align-items-stretch retro-layout">
-				@foreach($posts as $post)
+				@foreach($posts1 as $post)
 				<div class="col-md-4">
 					<a href="/posts/{{$post->id}}" class="h-entry mb-30 v-height gradient">
 
