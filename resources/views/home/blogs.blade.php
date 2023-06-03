@@ -5,11 +5,7 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 left-side">
                 <h2>Recent Blog Posts</h2>
-                
-
-
-
-                <div class="post">
+                  <div class="post">
                     <div class="row">
                         @foreach ($posts as $post)
                         <div class="col-lg-6 col-md-12 col-12">
@@ -40,6 +36,26 @@
 
             </div>
         </div>
+<div class="section search-result-wrap">
+    <div class="container">
+      
+      <div class="row posts-entry">
+        <div class="col-lg-8">
+          <div class="blog-entry d-flex blog-entry-search-item">
+            <a href="/posts/{{$post->id}}" class="img-link me-4">
+            <img style="width :100%"src="/storage/images/{{$post->cover_image}}"></a>
+            <div>
+              <span class="date">{{$post->created_at}} &bullet; <a href="#">{{$post->branch_name}}</a></span>
+              <h2><a href="single.html">{{$post->title}}</a></h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nobis ea quis inventore vel voluptas.</p>
+              <p><a href="single.html" class="btn btn-sm btn-outline-primary">Read More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
         <div class="row bt"> 
             {{$posts->links()}} 
         </div>

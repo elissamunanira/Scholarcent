@@ -69,10 +69,10 @@
 									<a href="category.html">Scholarship</a>
 									<ul class="dropdown">
 									<li>
-										@foreach ($branches as $branch)
+										{{-- @foreach ($branches as $branch)
 										<a href="{{url('/blog',$branch->id)}}">
 										{{ $branch->branch_name }}
-										@endforeach
+										@endforeach --}}
 									</li> 
 									</ul>
 								</li>
