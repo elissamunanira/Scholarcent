@@ -16,7 +16,7 @@ class PageController extends Controller
         $posts = Post::orderBy('created_at','desc')->paginate(6);
         $posts1 = Post::orderBy('created_at','desc')->paginate(2);
         $posts2 = Post::orderBy('created_at','desc')->paginate(1);
-        $posts3 = Post::orderBy('created_at','desc')->paginate(1);
+        $posts3 = Post::orderBy('created_at','desc')->paginate(2);
         return view('home.index', compact('posts','posts1','posts2','posts3','branches'));
     }
 
