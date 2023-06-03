@@ -24,8 +24,8 @@
 						<div class="featured-img" style="background-image: url('/home/images/img_1_vertical.jpg');"></div>
 
 						<div class="text">
-							<span class="date">Apr. 14th, 2022</span>
-							<h2>Why is my internet so slow?</h2>
+							<span class="date">{{$post->created_at}}</span>
+							<h2>{{$post->title}}</h2>
 						</div>
 					</a>
 				</div>
