@@ -47,7 +47,7 @@
             <div>
               <span class="date">{{$post->created_at}} &bullet; <a href="#">{{$post->branch_name}}</a></span>
               <h2><a href="single.html">{{$post->title}}</a></h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, nobis ea quis inventore vel voluptas.</p>
+              <p>{{$post->body}}</p>
               <p><a href="single.html" class="btn btn-sm btn-outline-primary">Read More</a></p>
             </div>
           </div>
