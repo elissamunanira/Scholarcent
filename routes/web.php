@@ -33,6 +33,7 @@ Route::get('/contact-us', [App\Http\Controllers\PageController::class, 'contact'
 Route::get('/blog', [App\Http\Controllers\PageController::class, 'blog']);
 Route::get('/blog/{branches}', [App\Http\Controllers\PostsController::class, 'branchBlog']);
 
+Route::get('/category/scholarship', [App\Http\Controllers\PageController::class, 'scholarship']);
 
 Auth::routes();
 
