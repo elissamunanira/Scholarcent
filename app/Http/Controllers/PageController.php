@@ -43,7 +43,7 @@ class PageController extends Controller
     //start of filtering projects functions 
 
     public function scholarship(){
-        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->get();
         return view("home.blog",compact('posts'));
     }
 
