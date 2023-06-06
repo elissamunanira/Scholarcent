@@ -68,13 +68,13 @@
 								<li class="has-children">
 									<a href="category.html">Scholarship</a>
 									<ul class="dropdown-menu">
-                            <li>
-                                @foreach ($branches as $branch)
-                                <a href="{{url('/blog',$branch->id)}}">
-                                 {{ $branch->branch_name }}
-                                @endforeach
-                            </li> 
-                        </ul>
+									<li>
+										@foreach ($branches as $branch)
+										<a href="{{url('/blog',$branch->id)}}">
+										{{ $branch->branch_name }}
+										@endforeach
+									</li> 
+								</ul>
 								</li>
 								{{-- <li><a href="/branches">Scholarship</a></li> --}}
 								<li><a href="category.html">Internship</a></li>
