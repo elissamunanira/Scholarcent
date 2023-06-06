@@ -1,4 +1,4 @@
-@extends('layout.apps')
+@extends('layouts.apps')
 @section('content')
   <div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('{{ asset('/storage/images/' . $post->cover_image) }}');">
     <div class="container">

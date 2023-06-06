@@ -40,4 +40,11 @@ class PageController extends Controller
         return view('home.blog', compact('posts','branches'));
     }
 
+    //start of filtering projects functions 
+
+    public function scholarship(){
+        $posts = Post::orderBy('created_at','desc')->where('branch_name', 'scholarship')->paginate(6);
+        return view("home.blog",compact('posts'));
+    }
+
 }
