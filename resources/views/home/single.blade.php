@@ -30,6 +30,8 @@
           <p><a href="single.html" class="btn btn-sm btn-outline-primary">Join Our Whatsapp Group</a></p>
       </div>
     </div>
+    <hr>
+      <small>Written on {{$post->created_at}} by {{$post-> user ->name}}</small>
     @if(!Auth::guest())
       @if(Auth::user()->id == $post->user_id)
           <hr>
