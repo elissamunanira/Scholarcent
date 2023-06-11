@@ -97,7 +97,7 @@
 						<h3>Social</h3>
 						<ul class="list-unstyled social">
 							<li><a href="#"><span class="icon-instagram"></span></a></li>
-							<li><a href="https://twitter.com/JeanCla03879923"><i class="icon-twitter"></span></a></li>
+							<li><a href="https://twitter.com/JeanCla03879923"><span class="icon-twitter"></span></a></li>
 							<li><a href="https://www.facebook.com/profile.php?id=100092999800797"><span class="icon-facebook"></span></a></li>
 							<li><a href="https://www.linkedin.com/in/jean-hakizimana-4a31b0265/"><span class="icon-linkedin"></span></a></li>
 							<li><a href="https://chat.whatsapp.com/G1DHvYsLWRXAEUcK0rbPzu"><span class="icon-pinterest"></span></a></li>
