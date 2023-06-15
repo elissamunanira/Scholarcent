@@ -5,7 +5,6 @@
     <div class="container">
       
       <div class="row posts-entry">
-        <div class="col-lg-8">
             @foreach($posts as $post)
 				<div class="col-lg-4 mb-4">
 					<div class="post-entry-alt">
@@ -16,6 +15,7 @@
               <p>{{ Str::limit(strip_tags($post->body), 100, '...') }}</p>
               <p><a href="/posts/{{$post->id}}" class="btn btn-sm btn-outline-primary">Read More</a></p>
             </div>
+          </div>
           </div>
             @endforeach
         </div>
