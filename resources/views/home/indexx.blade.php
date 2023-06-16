@@ -113,9 +113,9 @@
 
 							<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
 							<div class="post-meta align-items-center text-left clearfix">
-								<p>Written</p>
+								<p>Written
 								<span class="d-inline-block mt-1">By <a href="#">{{$post-> user ->name}}</a></span>
-								<span>&nbsp;-&nbsp; {{$post->created_at}}</span>
+								<span>&nbsp;-&nbsp; {{$post->created_at}}</span></p>
 							</div>
 
 							<p> {{ Str::limit(strip_tags($post->body), 150, '...') }}</p>
