@@ -7,10 +7,10 @@
       <div class="row posts-entry">
         <div class="col-lg-8">
             @foreach($posts as $post)
-          <div class="blog-entry d-flex blog-entry-search-item">
-            <a href="/posts/{{$post->id}}" class="img-link me-4">
-            <img style="width :100%"src="/storage/images/{{$post->cover_image}}"></a>
-            <div>
+				<div class="col-lg-4 mb-4">
+					<div class="post-entry-alt">
+						<a href="/posts/{{$post->id}}" class="img-link"><img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid"></a>
+						<div class="excerpt">
               <span class="date">{{$post->created_at}} &bullet; <a href="#">{{$post->branch_name}}</a></span>
               <h2><a href="/posts/{{ $post->id }}">{{$post->title}}</a></h2>
               <p>{{ Str::limit(strip_tags($post->body), 100, '...') }}</p>
