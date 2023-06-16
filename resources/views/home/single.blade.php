@@ -7,7 +7,8 @@
           <div class="post-entry text-center">
             <h1 class="mb-4">{{$post->title}}</h1>
             <div class="post-meta align-items-center text-center">
-              <figure class="author-figure mb-0 me-3 d-inline-block"><img src="/home/images/person_1.jpg" alt="Image" class="img-fluid"></figure>
+              {{-- <figure class="author-figure mb-0 me-3 d-inline-block"><img src="/home/images/person_1.jpg" alt="Image" class="img-fluid"></figure> --}}
+              <p>Written </p>
               <span class="d-inline-block mt-1">By {{$post->user->name}}</span>
               <span>&nbsp;-&nbsp; {{$post->created_at}}</span>
             </div>

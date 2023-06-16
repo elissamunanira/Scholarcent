@@ -113,7 +113,7 @@
 
 							<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
 							<div class="post-meta align-items-center text-left clearfix">
-								<figure class="author-figure mb-0 me-3 float-start"><img src="/home/images/person_1.jpg" alt="Image" class="img-fluid"></figure>
+								<p>Written</p>
 								<span class="d-inline-block mt-1">By <a href="#">{{$post-> user ->name}}</a></span>
 								<span>&nbsp;-&nbsp; {{$post->created_at}}</span>
 							</div>
