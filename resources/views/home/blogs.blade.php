@@ -4,7 +4,7 @@
 <div class="section search-result-wrap">
     <div class="container">
       
-      {{-- <div class="row posts-entry">
+      <div class="row">
             @foreach($posts as $post)
 				<div class="col-lg-4 mb-4">
 					<div class="post-entry-alt">
@@ -18,7 +18,7 @@
           </div>
           </div>
             @endforeach
-        </div> --}}
+        </div>
       </div>
     </div>
     <div class="row bt"> 
