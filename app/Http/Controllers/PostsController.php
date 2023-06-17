@@ -85,26 +85,26 @@ class PostsController extends Controller
         // }
 
 
-        // if($request->hasFile('cover_image')){
-        //         $cover_image = $request->file('cover_image');
-        //         // @unlink(public_path('images' . $request->cover_image));
-        //         $fileNameToStore = date('YmdHi') . $cover_image->getClientOriginalName();
-        //         $cover_image->move(public_path('images'), $fileNameToStore);
-        //     }
+        if($request->hasFile('cover_image')){
+                $cover_image = $request->file('cover_image');
+                // @unlink(public_path('images' . $request->cover_image));
+                $fileNameToStore = date('YmdHi') . $cover_image->getClientOriginalName();
+                $cover_image->move(public_path('images'), $fileNameToStore);
+            }
 
         // Handle File upload
-        if($request->hasFile('cover_image')){
-            // Get filename with the extension
-            $filenameWithExt = $request->file('cover_image' )->getClientOriginalName();
-            //Get just filename
-            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-            //Get just Ext
-            $extension = $request->file('cover_image' )->getClientOriginalExtension();
-            //Filename to store
-            $fileNameToStore = $filename. '_'.time().'.'.$extension;
-            //upload image
-            $path = $request->file('cover_image')->storeAs('public/images/',$fileNameToStore);
-        }
+        // if($request->hasFile('cover_image')){
+        //     // Get filename with the extension
+        //     $filenameWithExt = $request->file('cover_image' )->getClientOriginalName();
+        //     //Get just filename
+        //     $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+        //     //Get just Ext
+        //     $extension = $request->file('cover_image' )->getClientOriginalExtension();
+        //     //Filename to store
+        //     $fileNameToStore = $filename. '_'.time().'.'.$extension;
+        //     //upload image
+        //     $path = $request->file('cover_image')->storeAs('public/images/',$fileNameToStore);
+        // }
         else{
             $fileNameToStore = 'noimage.jpg';
         }
