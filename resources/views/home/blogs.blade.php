@@ -6,7 +6,7 @@
       
       <div class="row">
             @foreach($posts as $post)
-				<div class="col-lg-4 mb-4">
+        <div class="col-md-6 col-lg-3">
 					<div class="post-entry-alt">
 						<a href="/posts/{{$post->id}}" class="img-link"><img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid"></a>
 						<div class="excerpt">
