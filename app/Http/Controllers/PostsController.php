@@ -209,28 +209,67 @@ class PostsController extends Controller
 
         $post_id = DB::table('branch_post')->where('post_id',$id)->value('branch_id');
         
-        $branch_id=$request->branch_name;
+        // $branch_id=$request->branch_name;
         
+        // $branch_details = Branch::find($branch_id);
+        // $branch_name= $branch_details->branch_name;
+
+        // $post = Post::find($id);
+
+        // $post->branch_name = $branch_name;
+        // $post->title = $request->input('title');
+        // $post->body = $request->input('body');
+        // if($request->hasFile('cover_image')){
+        //     $post->cover_image =$fileNameToStore;
+        // } 
+        
+        // $post->update();
+
+        // $post->branch()->detach($post_id);
+        // $post->branch()->attach($branch_id);
+
+        // // $post->assign($request->input('branches'));
+
+        // return redirect('/posts')-> with('success','Post updated successfully');
+
+        $branch_id = $request->branch_name;
         $branch_details = Branch::find($branch_id);
-        $branch_name= $branch_details->branch_name;
 
-        $post = Post::find($id);
+        if ($branch_details) {
+            $branch_name = $branch_details->branch_name;
 
-        $post->branch_name = $branch_name;
-        $post->title = $request->input('title');
-        $post->body = $request->input('body');
-        if($request->hasFile('cover_image')){
-            $post->cover_image =$fileNameToStore;
-        } 
-        
-        $post->update();
+            $post = Post::find($id);
 
-        $post->branch()->detach($post_id);
-        $post->branch()->attach($branch_id);
+            $post->branch_name = $branch_name;
+            $post->title = $request->input('title');
+            $post->body = $request->input('body');
 
-        // $post->assign($request->input('branches'));
+            if ($request->hasFile('cover_image')) {
+                $post->cover_image = $fileNameToStore;
+            }
 
-        return redirect('/posts')-> with('success','Post updated successfully');
+            $post->update();
+
+            $post->branch()->detach($post_id);
+            $post->branch()->attach($branch_id);
+
+            return redirect('/posts')->with('success', 'Post updated successfully');
+            }
+
+            // If $branch_details is null, continue with updating the other post details
+            $post = Post::find($id);
+
+            $post->title = $request->input('title');
+            $post->body = $request->input('body');
+
+            if ($request->hasFile('cover_image')) {
+                $post->cover_image = $fileNameToStore;
+            }
+
+            $post->update();
+
+            return redirect('/posts')->with('success', 'Post updated successfully');
+
     }
 
     /**
