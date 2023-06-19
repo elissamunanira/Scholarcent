@@ -1,6 +1,6 @@
 @extends('layouts.apps')
 @section('content')
-  <div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('{{ asset('images/' . $post->cover_image) }}');">
+  <div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('{{ asset('/storage/images/' . $post->cover_image) }}');">
     <div class="container">
       <div class="row same-height justify-content-center">
         <div class="col-md-6">
@@ -60,7 +60,7 @@
         <div class="col-md-6 col-lg-3">
           <div class="blog-entry">
             <a href="/posts/{{$post->id}}" class="img-link">
-              <img style="width :100%"src="/images/{{$post->cover_image}}" alt="Image" class="img-fluid">
+              <img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid">
             </a>
             <span class="date">{{$post->created_at}}</span>
             <h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
