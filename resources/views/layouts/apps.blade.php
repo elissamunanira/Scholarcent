@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="/fonts/icomoon/style.css">
 	<link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
 
-	<link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 	<link rel="stylesheet" href="/home/css/tiny-slider.css">
 	<link rel="stylesheet" href="/home/css/aos.css">
