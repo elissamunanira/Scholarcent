@@ -52,8 +52,7 @@
 				<div class="site-navigation">
 					
 					<div class="row g-0 align-items-center">
-						<div class="col-2">
-							{{-- <a href="/" class="logo m-0 float-start">SCHOLARCENT</a> --}}<a class="navbar-brand" href="/">
+						<div class="col-2">class="navbar-brand" href="/">
 							<img class="logo m-0 float-start" src="/images/logo/scholarcentlogo.jpeg" style="width: 200px; height: auto;" alt="">
 					</a>
 						</div>
