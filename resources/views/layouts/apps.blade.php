@@ -50,12 +50,12 @@
 		<div class="container">
 			<div class="menu-bg-wrap">
 				<div class="site-navigation">
-					{{-- <div class="col-2">
-							<img class="logo m-0 float-start" src="/images/logo/scholarcent.jpeg" alt="">
-						</div> --}}
+					
 					<div class="row g-0 align-items-center">
 						<div class="col-2">
-							<a href="/" class="logo m-0 float-start">SCHOLARCENT</a>
+							{{-- <a href="/" class="logo m-0 float-start">SCHOLARCENT</a> --}}<a class="navbar-brand" href="/">
+							<img class="logo m-0 float-start" src="/images/logo/scholarcent.jpeg" style="width: 100px; height: auto;" alt="">
+					</a>
 						</div>
 						<div class="col-8 text-center">
 
