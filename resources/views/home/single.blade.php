@@ -26,7 +26,7 @@
         <div class="col-md-12 col-lg-8 main-content">
 
           <div class="post-content-body">
-            <p>{{$post->body}}</p>
+            <p style="color:black">{{$post->body}}</p>
           </div>
           <p><a href="/posts/{{$post->id}}" class="btn btn-sm btn-outline-primary">Join Our Whatsapp Group</a></p>
       </div>
