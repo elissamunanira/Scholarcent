@@ -158,9 +158,9 @@
               **==========
             -->
 
-            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved to scholarcent.
+            <h4>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved to scholarcent.
 				 {{-- &mdash; Designed with love by <a href="https://www.linkedin.com/in/elissa-munanira-05116b238/">Elissa</a> --}}
-            </p>
+			</h4>
           </div>
         </div>
       </div> <!-- /.container -->
