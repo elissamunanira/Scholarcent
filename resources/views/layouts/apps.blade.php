@@ -105,7 +105,6 @@
 							<li><a href="https://www.facebook.com/profile.php?id=100092999800797"><span class="icon-facebook"></span></a></li>
 							<li><a href="https://www.linkedin.com/in/jean-hakizimana-4a31b0265/"><span class="icon-linkedin"></span></a></li>
 							<li><a href="https://chat.whatsapp.com/G1DHvYsLWRXAEUcK0rbPzu"><span class="icon-pinterest"></span></a></li>
-							<li><a href="https://www.youtube.com/@MyHometv822"><i class="fa-brands fa-youtube"></i></a></li>
 							<li><a href="https://www.youtube.com/@MyHometv822"><span class="icon-youtube"></span></a></li>
 						</ul>
 					</div> <!-- /.widget -->
