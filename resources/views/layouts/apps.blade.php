@@ -20,10 +20,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 
-	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+	<link rel="stylesheet" href="/fonts/icomoon/style.css">
+	<link rel="stylesheet" href="/fonts/flaticon/font/flaticon.css">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="/https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
 	<link rel="stylesheet" href="/home/css/tiny-slider.css">
 	<link rel="stylesheet" href="/home/css/aos.css">
@@ -106,7 +106,7 @@
 							<li><a href="https://www.facebook.com/profile.php?id=100092999800797"><span class="icon-facebook"></span></a></li>
 							<li><a href="https://www.linkedin.com/in/jean-hakizimana-4a31b0265/"><span class="icon-linkedin"></span></a></li>
 							<li><a href="https://chat.whatsapp.com/G1DHvYsLWRXAEUcK0rbPzu"><span class="icon-pinterest"></span></a></li>
-							<li><i class="fa-brands fa-youtube"></i></li>
+							<li><a href="https://www.youtube.com/@MyHometv822"><i class="fa-brands fa-youtube"></i></a></li>
 							<li><a href="https://www.youtube.com/@MyHometv822"><span class="icon-youtube"></span></a></li>
 						</ul>
 					</div> <!-- /.widget -->
