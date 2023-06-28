@@ -315,4 +315,22 @@ class PostsController extends Controller
         return view('home.blogs', compact('branches', 'posts'));
     }
   
+
+    public function upload(Request $request){
+
+        if($request->hasFile('upload')){
+
+            $orginName = $request->file('upload')->getClientOrginalName();
+            $fileName = pathinfo($orginName, PATHINFO_FILENAME);
+            $extension = $request->file('upload')->getClientOrginalExtension();
+            $fileName = $fileName . '_' . time() . '.' . $extension;
+            $request->file('upload')->move(public_path('media',$fileName));
+
+            $url = asset('media/' .$fileName);
+            return response()->json(['fileName' => $fileName, 'uploaded'=>1, 'url'=>$url]);
+        }
+    }
+
+
+
 }
