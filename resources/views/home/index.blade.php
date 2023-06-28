@@ -51,7 +51,7 @@
 				</div>
 				<div class="col-md-3">
 					
-				<h1>Banner</h1>
+				
 				</div>
 			</div>
 		</div>
@@ -87,7 +87,7 @@
 					</div>
 				</div>
 				<div class="col-md-3">
-					<h1>Banner</h1>
+					
 				</div>
 			</div>
 		</div>
@@ -163,6 +163,23 @@
 							<h2>{{$post->title}}</h2>
 						</div>
 					</a>
+
+					{{-- <div class="two-col d-block d-md-flex justify-content-between">
+						<a href="single.html" class="hentry v-height img-2 gradient">
+							<div class="featured-img" style="background-image: url('/home/images/img_2_sq.jpg');"></div>
+							<div class="text text-sm">
+								<span>February 12, 2019</span>
+								<h2>Don’t assume your user data in the cloud is safe</h2>
+							</div>
+						</a>
+						<a href="single.html" class="hentry v-height img-2 ms-auto float-end gradient">
+							<div class="featured-img" style="background-image: url('/home/images/img_3_sq.jpg');"></div>
+							<div class="text text-sm">
+								<span>February 12, 2019</span>
+								<h2>Startup vs corporate: What job suits you best?</h2>
+							</div>
+						</a>
+					</div>   --}}
 
 				</div>
 				@endforeach
