@@ -13,8 +13,9 @@
     <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
 
     <style type="text/css">
-        .ck-editor__editable_inline{
-            height: 450 px;
+        .ck-editor__editable_inline
+        {
+            height: 450px;
         }
     </style>
 

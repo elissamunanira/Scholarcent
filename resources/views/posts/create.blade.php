@@ -29,12 +29,5 @@
         <input type="submit" value="Upload" class="btn btn-success"></br>
     </form>
 </div>
-<script>
-        ClassicEditor
-            .create( document.querySelector( '#editor' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-    </script>
 
 @endsection
