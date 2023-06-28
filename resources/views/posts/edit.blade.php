@@ -33,13 +33,6 @@
          {{Form::submit('Submit' , ['class' => 'btn btn-success'])}}
   </form>
 </div>
-<script>
-        ClassicEditor
-            .create( document.querySelector( '#editor' ) )
-            .catch( error => {
-                console.error( error );
-            } );
-    </script>
 
 @endsection
 

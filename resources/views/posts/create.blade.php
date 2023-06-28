@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container"><script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+<div class="container">
     <h1>Create Post</h1>
     <form action= "{{url('posts')}}" method="post" enctype="multipart/form-data">
         {!! csrf_field() !!}
