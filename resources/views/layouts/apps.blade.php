@@ -86,9 +86,9 @@
     @yield('content')
 
 	{{-- <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script> --}}
-	<script>
+	{{-- <script>
 		CKEDITOR.replace('editor');
-	</script>
+	</script> --}}
 
 	<footer class="site-footer">
 		<div class="container">
