@@ -84,12 +84,6 @@
 	</nav>
 
     @yield('content')
-
-	{{-- <script src="{{ asset('vendor/ckeditor/ckeditor.js') }}"></script> --}}
-	{{-- <script>
-		CKEDITOR.replace('editor');
-	</script> --}}
-
 	<footer class="site-footer">
 		<div class="container">
 			<div class="row">
