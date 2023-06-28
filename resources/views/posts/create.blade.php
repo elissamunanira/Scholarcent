@@ -30,7 +30,7 @@
     </form>
 </div><script>
         ClassicEditor
-            .create( document.querySelector( '#description' ) )
+            .create( document.querySelector( '#editor' ) )
             .catch( error => {
                 console.error( error );
             } );
