@@ -11,6 +11,13 @@
 
 
     <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+
+    <style type="text/css">
+        .ck-editor__editable_inline{
+
+        }
+    </style>
+
     
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
     <!-- Theme style -->
