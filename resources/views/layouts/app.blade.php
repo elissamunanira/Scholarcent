@@ -14,7 +14,7 @@
 
     <style type="text/css">
         .ck-editor__editable_inline{
-
+            height: 450 px;
         }
     </style>
 
