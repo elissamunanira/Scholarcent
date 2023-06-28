@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="container"><script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
     <h1>Create Post</h1>
     <form action= "{{url('posts')}}" method="post" enctype="multipart/form-data">
         {!! csrf_field() !!}
@@ -21,12 +21,19 @@
          </div>
          <div class="form-group">
            {{ Form::label('body', 'Body')}}
-            {{Form::textarea('body','',['id'=> 'article-ckeditor', 'class' => 'form-control', 'placeholder' => 'Body'])}}
+            {{Form::textarea('body','',['id'=> 'description', 'class' => 'form-control', 'placeholder' => 'Body'])}}
          </div>
          <div class="form-group">
             {{Form::file('cover_image')}}
          </div>
         <input type="submit" value="Upload" class="btn btn-success"></br>
     </form>
-</div>
+</div><script>
+        ClassicEditor
+            .create( document.querySelector( '#description' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+
 @endsection

@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="/home/css/style.css">
 
 	<link rel="stylesheet" href="/home/css/flatpickr.min.css">
+	<script src="{{ asset('ckeditor/ckeditor.js') }}"></script>
 
 
 	<title>{{ config('app.name', 'Scholarship') }}</title>
@@ -172,8 +173,8 @@
     		<span class="visually-hidden">Loading...</span>
     	</div>
     </div>
+	{{-- <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script> --}}
 
-	<script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script>
 
     <script src="/home/js/bootstrap.bundle.min.js"></script>
     <script src="/home/js/tiny-slider.js"></script>
