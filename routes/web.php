@@ -60,5 +60,5 @@ Route::middleware('auth')->group(function () {
     Route::get('profile', [\App\Http\Controllers\ProfileController::class, 'show'])->name('profile.show');
     Route::put('profile', [\App\Http\Controllers\ProfileController::class, 'update'])->name('profile.update');
 
-    Route::post('/upload',[PostsController::class, 'upload'])->name('ckeditor.upload');
+    Route::post('/upload',[\App\Http\Controllers\PostsController::class, 'upload'])->name('ckeditor.upload');
 });
