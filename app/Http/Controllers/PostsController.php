@@ -316,19 +316,15 @@ class PostsController extends Controller
     }
   
 
-    public function upload(Request $request){
+   public function upload(Request $request)
+    {
+        $uploadedFile = $request->file('upload');
+        $uploadedFile->store('public/ckeditor/images');
 
-        if($request->hasFile('upload')){
+        // Return the URL of the uploaded image
+        $url = asset('storage/ckeditor/images/' . $uploadedFile->hashName());
 
-            $orginName = $request->file('upload')->getClientOrginalName();
-            $fileName = pathinfo($orginName, PATHINFO_FILENAME);
-            $extension = $request->file('upload')->getClientOrginalExtension();
-            $fileName = $fileName . '_' . time() . '.' . $extension;
-            $request->file('upload')->move(public_path('media',$fileName));
-
-            $url = asset('media/' .$fileName);
-            return response()->json(['fileName' => $fileName, 'uploaded'=>1, 'url'=>$url]);
-        }
+        return response()->json(['url' => $url]);
     }
 
 
