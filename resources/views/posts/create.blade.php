@@ -21,7 +21,7 @@
          </div>
          <div class="form-group">
            {{ Form::label('body', 'Body')}}
-            {{Form::textarea('body','',['id'=> 'editor', 'class' => 'form-control', 'placeholder' => 'Body'])}}
+            {!! Form::textarea('body','',['id'=> 'editor', 'class' => 'form-control', 'placeholder' => 'Body']) !!}
          </div>
          <div class="form-group">
             {{Form::file('cover_image')}}
