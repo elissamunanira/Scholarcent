@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
 
 
-    <script src="https://cdn.ckeditor.com/ckeditor5/35.1.0/classic/ckeditor.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
 
     <style type="text/css">
         .ck-editor__editable_inline
@@ -90,7 +90,7 @@
                 {
                     ckfinder:
                     {
-                        uploadurl:"{{route('ckeditor.upload',['_token'=>csrf_token()])}}"
+                        uploadurl:"{{route('ckeditor.upload',['_token'=>csrf_token()])}}",
                     }
                 } )
                 .catch( error => {
