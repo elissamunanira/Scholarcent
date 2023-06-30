@@ -83,6 +83,10 @@
     </div>
     <!-- /.content-wrapper -->
 
+    <script>
+        CKEDITOR.replace('editor');
+    </script>
+
     <script src="{{asset('ckeditor5/ckeditor.js')}}"></script>
 
    {{-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script> --}}
