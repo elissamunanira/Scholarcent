@@ -331,7 +331,7 @@ class PostsController extends Controller
         }
     }
 
-    public function upload()
+    public function upload(Request $request)
     {
     if ($request->hasFile('upload')) {
         $originName = $request->file('upload')->getClientOriginalName();
