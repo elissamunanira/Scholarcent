@@ -23,10 +23,10 @@
 
       <div class="row blog-entries element-animate">
 
-        <div class="col-md-12 col-lg-8 main-content">
+        <div class="col-md-12 col-lg-12 main-content">
 
-          <div class="post-content-body">
-            <p style="color:black">{{$post->body}}</p>
+          <div class="post-content-body" style="color:black">
+            {!!$post->body!!}
           </div>
           <p><a href="https://chat.whatsapp.com/G1DHvYsLWRXAEUcK0rbPzu" class="btn btn-sm btn-outline-primary">Join Our Whatsapp Group</a></p>
       </div>

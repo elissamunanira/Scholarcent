@@ -10,7 +10,7 @@
     <!-- Font Awesome -->
 
 
-    <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
+    
 
     <style type="text/css">
         .ck-editor__editable_inline
@@ -82,6 +82,10 @@
         @yield('content')
     </div>
     <!-- /.content-wrapper -->
+
+    {{-- <script src="{{asset('ckeditor5/ckeditor.js')}}"></script> --}}
+
+   <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
 
 
     <script>
