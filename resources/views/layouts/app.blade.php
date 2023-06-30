@@ -82,10 +82,7 @@
         @yield('content')
     </div>
     <!-- /.content-wrapper -->
-
-    <script>
-        CKEDITOR.replace('editor');
-    </script>
+    
 
     <script src="{{asset('ckeditor5/ckeditor.js')}}"></script>
 
