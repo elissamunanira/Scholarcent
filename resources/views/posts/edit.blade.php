@@ -9,7 +9,7 @@
      {{csrf_field()}}
      @method("PATCH")
          <div class="form-group col-md-6">
-            <label for="title">Branch:</label>
+            <label for="title">Category:</label>
                 <select name="branch_name" class="form-control">
                     <option selected>{{$post->branch_name}}</option>
                     @foreach ($branches as $branch)
