@@ -25,9 +25,10 @@
 
          <div class="form-group">
            {{ Form::label('body', 'Body')}}
-            {{Form::textarea('body',$post->body ,['id'=> 'editor', 'class' => 'form-control', 'placeholder' => 'Body'])}}
+            {{Form::textarea('body',$post->body ,['id'=> 'editor', 'class' => 'ckeditor form-control', 'placeholder' => 'Body'])}}
          </div>
          <div class="form-group">
+            <label for="cover_image">Featured Image</label>
             {{Form::file('cover_image')}}
          </div>
          {{Form::submit('Submit' , ['class' => 'btn btn-success'])}}

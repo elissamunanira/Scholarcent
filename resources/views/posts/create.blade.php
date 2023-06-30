@@ -24,6 +24,7 @@
             {{Form::textarea('body','',['id'=> 'editor', 'class' => 'ckeditor form-control', 'placeholder' => 'Body'])}}
          </div>
          <div class="form-group">
+            <label for="cover_image">Featured Image</label>
             {{Form::file('cover_image')}}
          </div>
         <input type="submit" value="Upload" class="btn btn-success"></br>
