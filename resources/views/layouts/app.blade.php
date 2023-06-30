@@ -84,9 +84,9 @@
     <!-- /.content-wrapper -->
     
 
-    {{-- <script src="{{asset('ckeditor5/ckeditor.js')}}"></script>
+    <script src="{{asset('ckeditor5/ckeditor.js')}}"></script>
 
-   <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
+   {{-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script> --}}
 
 
     <script>
@@ -99,15 +99,6 @@
             .catch(error => {
                 console.error(error);
             });
-    </script> --}}
-
-
-    <script src="https://cdn.ckeditor.com/4.12.1/standard/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace('description', {
-            filebrowserUploadUrl: "{{ route('admin.product.uploadMedia', ['_token' => csrf_token()]) }}",
-            filebrowserUploadMethod: 'form'
-        });
     </script>
 
 

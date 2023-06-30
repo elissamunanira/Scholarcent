@@ -316,7 +316,7 @@ class PostsController extends Controller
     }
   
 
-    public function upload(Request $request){
+    public function uploadv(Request $request){
 
         if($request->hasFile('upload')){
 
@@ -331,7 +331,7 @@ class PostsController extends Controller
         }
     }
 
-    public function uploadMedia(Request $request)
+    public function upload(Request $request)
 {
     if ($request->hasFile('upload')) {
         $originName = $request->file('upload')->getClientOriginalName();
