@@ -84,9 +84,10 @@
     <!-- /.content-wrapper -->
     
 
-    <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 
-   {{-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script> --}}
+   {{-- <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script> --}} 
+   
+    <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
 
 
     <script>
