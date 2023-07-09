@@ -50,7 +50,7 @@ Route::post('register', 'App\Http\Controllers\Auth\RegisterController@register')
 
 // Login Routes
 Route::get('ty.login', 'App\Http\Controllers\Auth\LoginController@showLoginForm')->name('login');
-Route::post('login', 'App\Http\Controllers\Auth\LoginController@login');
+Route::post('ty.login', 'App\Http\Controllers\Auth\LoginController@login');
 Route::post('logout', 'App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
 // Password Reset Routes
