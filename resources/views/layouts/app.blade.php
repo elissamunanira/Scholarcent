@@ -121,7 +121,7 @@
         <div class="float-right d-none d-sm-inline">
         </div>
         <!-- Default to the left -->
-        <center><strong>Copyright &copy; 2023 Scholarcent </strong> All rights reserved.</center>
+        <strong>Copyright &copy; 2023 Scholarcent </strong> All rights reserved.
     </footer>
 </div>
 <!-- ./wrapper -->
