@@ -80,7 +80,8 @@
     <div class="content-wrapper">
         @include('inc.messages')
         @yield('content')
-         
+         <a href='https://acadooghostwriter.com/'>Ghostwriter Acadoo</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=2501ab976c485734fd0f43599f9717d36397860b'></script>
+<script type="text/javascript" src="https://freevisitorcounters.com/en/home/counter/1052326/t/1"></script>
     </div>
     <!-- /.content-wrapper -->
     
