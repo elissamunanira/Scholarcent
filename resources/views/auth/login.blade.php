@@ -4,7 +4,7 @@
     <div class="card-body login-card-body">
         <p class="login-box-msg">{{ __('Login') }}</p>
 
-        <form action="{{ route('login') }}" method="post">
+        <form action="{{ route('ty.login') }}" method="post">
             @csrf
 
             <div class="input-group mb-3">
