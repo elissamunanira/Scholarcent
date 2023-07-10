@@ -4,7 +4,7 @@
 <div class="section search-result-wrap">
     <div class="container">
       
-      {{-- <div class="row">
+      <div class="row">
             @foreach($posts as $post)
 				<div class="col-lg-4 mb-4">
 					<div class="post-entry-alt">
@@ -20,9 +20,9 @@
             @endforeach
         </div>
       </div>
-      </div> --}}
+      </div>
 
-      <div class="row posts-entry">
+      {{-- <div class="row posts-entry">
             @foreach($posts as $post)
         <div class="col-lg-12">
           <div class="blog-entry d-flex blog-entry-search-item">
@@ -35,7 +35,7 @@
           </div>
         </div>
             @endforeach
-      </div>
+      </div> --}}
 
     <div class="row bt"> 
         {{$posts->links()}} 
