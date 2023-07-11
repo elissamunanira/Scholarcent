@@ -117,7 +117,7 @@
                                       var postyValues =  JSON.parse('{!! @json_encode($postMonthCount)!!}');
                                       
                                       new Chart("myChart", {
-                                          type: "bar",
+                                          type: "line",
                                           data: {
                                           labels: postxValues,
                                           datasets: [{
