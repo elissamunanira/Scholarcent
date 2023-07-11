@@ -70,9 +70,9 @@ class DashboardController extends Controller
                     // ->get();
                     ->paginate(10);
 
-        // return view('dashboard.index',compact('postsCount','usersCount','rolesCount','branchesCount','postChart','postMonthCount','postMonths','posts','i'));
+        return view('dashboard.index',compact('postsCount','usersCount','rolesCount','branchesCount','postChart','postMonthCount','postMonths','posts','i'));
 
-        return view('dashboard.index',compact('postsCount','usersCount','rolesCount','branchesCount','postOwner','i'));
+        // return view('dashboard.index',compact('postsCount','usersCount','rolesCount','branchesCount','postOwner','i'));
     }
 
     public function dashboardPost(){
