@@ -207,4 +207,86 @@
 
 
 
+<div class="content">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-12">
+                  <div class="card">
+
+                    <div class="card-header">
+                        <h3 class="card-title">
+                        <i class="fas fa-chart-line mr-1"></i>
+                        Posts
+                        </h3>
+                        <div class="card-tools">
+                        <ul class="nav nav-pills ml-auto">
+                            <li class="nav-item">
+                            <a class="btn btn-success"href="/posts" data-toggle="tab">Post Overview</a>
+                            </li>
+                        </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- /.card-header -->
+
+                        <div class="card-body">
+                            <div class="col-md-6">
+                                <div class="grid">
+                                  <div class="grid-body">
+                                    <div class="item-wrapper">
+                                    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+                  
+                                      <canvas id="myChart" width="600" height="400"></canvas>
+                                      
+                                      <script>
+                                      var postxValues =  JSON.parse('{!! @json_encode($postMonths)!!}');
+                                      var postyValues =  JSON.parse('{!! @json_encode($postMonthCount)!!}');
+                                      
+                                      new Chart("myChart", {
+                                          type: "bar",
+                                          data: {
+                                          labels: postxValues,
+                                          datasets: [{
+                                              label:"Post",
+                                              backgroundColor: 'blue',
+                                              data: postyValues,
+                                              fill: true, 
+                                          
+                                          }]
+                                          },
+                                          options: {
+                                          legend: {display: false},
+                                          title: {
+                                              display: true,
+                                              text: "Post Overview"
+                                          },
+                                          scales:{
+                                              yAxes: [
+                                              {
+                                                  ticks:{min:0}
+                                              }
+                                              ],
+                                          }
+                                          }
+                                      });
+                                      </script>
+
+
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </div>
+
+
+
 @endsection
