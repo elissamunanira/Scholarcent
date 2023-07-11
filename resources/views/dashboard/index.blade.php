@@ -86,7 +86,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="card">
-{{-- 
+
                     <div class="card-header">
                         <h3 class="card-title">
                         <i class="fas fa-chart-line mr-1"></i>
@@ -99,11 +99,11 @@
                             </li>
                         </ul>
                         </div>
-                    </div> --}}
+                    </div>
                     
                     <!-- /.card-header -->
 
-                        {{-- <div class="card-body">
+                        <div class="card-body">
                             <div class="col-md-6">
                                 <div class="grid">
                                   <div class="grid-body">
@@ -152,7 +152,7 @@
                               </div>
 
                               
-                        </div> --}}
+                        </div>
                         
                     </div>
                 </div>
