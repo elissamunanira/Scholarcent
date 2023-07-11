@@ -50,16 +50,16 @@ class DashboardController extends Controller
 
         //start of post chart
                     
-        // $postChart = Post::select('id','created_at')->get()->groupBy(function($postChart){
-        //     return Carbon::parse($postChart->created_at)->format('Y-M');
-        // });
+        $postChart = Post::select('id','created_at')->get()->groupBy(function($postChart){
+            return Carbon::parse($postChart->created_at)->format('Y-M');
+        });
         
-        // $postMonths =[];
-        // $postMonthCount = [];
-        // foreach($postChart as $postMonth => $postValues){
-        //     $postMonths[] = $postMonth;
-        //     $postMonthCount[] = count($postValues);
-        // }
+        $postMonths =[];
+        $postMonthCount = [];
+        foreach($postChart as $postMonth => $postValues){
+            $postMonths[] = $postMonth;
+            $postMonthCount[] = count($postValues);
+        }
 
         //end of post chart
         $user_id = auth()->user()->id;
