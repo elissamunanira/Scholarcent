@@ -80,6 +80,7 @@
     <div class="content-wrapper">
         @include('inc.messages')
         @yield('content')
+         
     </div>
     <!-- /.content-wrapper -->
     

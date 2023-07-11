@@ -91,8 +91,6 @@
 					<div class="widget">
 						<h3 class="mb-4">About</h3>
 						<p>we are scholarcent website with usiful information about scholarships, jobs, internerships and courses. we guide and help you to make your dream become reality.</p>
-						<script type="text/javascript" src="https://freehitcounters.org/count/crp8"></script><br>
- <a href='https://www.versicherungen.at/'>Versicherungsvergleich</a> <script type='text/javascript' src='https://www.whomania.com/ctr?id=44af62fddd32fffcb829165b686fad3a1e5b7dd3'></script>
 					</div> <!-- /.widget -->
 					<div class="widget">
 						<h3>Social</h3>
