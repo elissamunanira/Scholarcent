@@ -25,9 +25,9 @@
                   @foreach(auth()->user()->roles as $role)
                       @if (($role->name == 'Admin')||($role->name != 'Admin' && auth()->user()->id == $post->user_id)) 
                     <td >
-                      <a class="btn btn-info" href="{{ route('posts.show',$post->id) }}">Show</a>
-                      <a class="btn btn-primary" href="{{ route('posts.edit',$post->id) }}">Edit</a>
-                          {!! Form::open(['method' => 'DELETE','route' => ['posts.destroy', $post->id],'style'=>'display:inline']) !!}
+                      <a class="btn btn-info" href="{{ route('posts.show',$post->title) }}">Show</a>
+                      <a class="btn btn-primary" href="{{ route('posts.edit',$post->title) }}">Edit</a>
+                          {!! Form::open(['method' => 'DELETE','route' => ['posts.destroy', $post->title],'style'=>'display:inline']) !!}
                               {!! Form::submit('Delete', ['class' => 'btn btn-danger']) !!}
                           {!! Form::close() !!}
                     </td>
