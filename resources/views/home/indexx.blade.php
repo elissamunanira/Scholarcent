@@ -6,7 +6,7 @@
 			<div class="row align-items-stretch retro-layout">
 				@foreach($posts as $post)
 				<div class="col-md-4">
-					<a href="/posts/{{$post->id}}" class="h-entry mb-30 v-height gradient">
+					<a href="/posts/{{$post->title}}" class="h-entry mb-30 v-height gradient">
 
 						<div class="featured-img" style="background-image: url('{{ asset('/storage/images/' . $post->cover_image) }}');"></div>
 
@@ -37,13 +37,13 @@
 					@foreach($scholarshipPosts as $post)
 						<div class="col-md-6">
 							<div class="blog-entry">
-								<a href="/posts/{{$post->id}}" class="img-link">
+								<a href="/posts/{{$post->title}}" class="img-link">
 									<img src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid">
 								</a>
 								<span class="date">{{$post->created_at}}</span>
-								<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
+								<h2><a href="/posts/{{$post->title}}">{{$post->title}}</a></h2>
 								<p>{{ Str::limit(strip_tags($post->body), 150, '...') }}</p>
-								<p><a href="/posts/{{$post->id}}" class="btn btn-sm btn-outline-primary">Read More</a></p>
+								<p><a href="/posts/{{$post->title}}" class="btn btn-sm btn-outline-primary">Read More</a></p>
 							</div>
 						</div>
 					@endforeach
@@ -74,13 +74,13 @@
 					@foreach($internshipPosts as $post)
 						<div class="col-md-6">
 							<div class="blog-entry">
-								<a href="/posts/{{$post->id}}" class="img-link">
+								<a href="/posts/{{$post->title}}" class="img-link">
 									<img src="/storage/images/{{$post->cover_image}}"  alt="Image" class="img-fluid">
 								</a>
 								<span class="date">{{$post->created_at}}</span>
-								<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
+								<h2><a href="/posts/{{$post->title}}">{{$post->title}}</a></h2>
 								<p>{{ Str::limit(strip_tags($post->body), 150, '...') }}</p>
-								<p><a href="/posts/{{$post->id}}" class="btn btn-sm btn-outline-primary">Read More</a></p>
+								<p><a href="/posts/{{$post->title}}" class="btn btn-sm btn-outline-primary">Read More</a></p>
 							</div>
 						</div>
 					@endforeach
@@ -107,11 +107,11 @@
 				@foreach($coursesPosts as $post)
 				<div class="col-lg-4 mb-4">
 					<div class="post-entry-alt">
-						<a href="/posts/{{$post->id}}" class="img-link"><img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid"></a>
+						<a href="/posts/{{$post->title}}" class="img-link"><img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid"></a>
 						<div class="excerpt">
 							
 
-							<h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
+							<h2><a href="/posts/{{$post->title}}">{{$post->title}}</a></h2>
 							<div class="post-meta align-items-center text-left clearfix">
 								<p>Written
 								<span class="d-inline-block mt-1">By <a href="#">{{$post-> user ->name}}</a></span>
@@ -119,7 +119,7 @@
 							</div>
 
 							<p> {{ Str::limit(strip_tags($post->body), 150, '...') }}</p>
-							<p><a href="/posts/{{$post->id}}" class="read-more">Continue Reading</a></p>
+							<p><a href="/posts/{{$post->title}}" class="read-more">Continue Reading</a></p>
 						</div>
 					</div>
 				</div>
@@ -146,7 +146,7 @@
 
 				<div class="col-md-6">
 
-					<a href="/posts/{{$post->id}}" class="hentry img-2 v-height mb30 gradient">
+					<a href="/posts/{{$post->title}}" class="hentry img-2 v-height mb30 gradient">
 						<div class="featured-img" style="background-image: url('{{ asset('/storage/images/' . $post->cover_image) }}');"></div>
 						<div class="text text-sm">
 							<span>{{$post->created_at}}</span>

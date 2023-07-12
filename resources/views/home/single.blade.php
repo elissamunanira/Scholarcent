@@ -37,7 +37,7 @@
       @if(Auth::user()->id == $post->user_id)
           <hr>
           <div>
-          <a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a>
+          <a href="/posts/{{$post->title}}/edit" class="btn btn-default">Edit</a>
 
           <div class="pull-right">
           {!!Form::open(['Action' => 'PostsController@destroy', 'method'=>'POST', 'class' => 'pull-right']) !!}
@@ -59,13 +59,13 @@
 				@foreach($posts as $post)
         <div class="col-md-6 col-lg-3">
           <div class="blog-entry">
-            <a href="/posts/{{$post->id}}" class="img-link">
+            <a href="/posts/{{$post->title}}" class="img-link">
               <img style="width :100%"src="/storage/images/{{$post->cover_image}}" alt="Image" class="img-fluid">
             </a>
             <span class="date">{{$post->created_at}}</span>
-            <h2><a href="/posts/{{$post->id}}">{{$post->title}}</a></h2>
+            <h2><a href="/posts/{{$post->title}}">{{$post->title}}</a></h2>
             <p>{{ Str::limit(strip_tags($post->body), 100, '...') }}</p>
-            <p><a href="/posts/{{$post->id}}" class="read-more">Continue Reading</a></p>
+            <p><a href="/posts/{{$post->title}}" class="read-more">Continue Reading</a></p>
           </div>
         </div>
         @endforeach

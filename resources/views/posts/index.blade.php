@@ -11,7 +11,7 @@
                         <img style="width :100%"src="/storage/images/{{$post->cover_image}}">
                     </div>
                     <div class="col-md-8 col-sm-8">
-                        <h3><a href = "/posts/{{$post->id}}">{{ $post->title }}</a></h3>
+                        <h3><a href = "/posts/{{$post->title}}">{{ $post->title }}</a></h3>
                         <p>{!! Str::limit(strip_tags($post->body), 100, '...') !!}</p>
                         <small>Written on {{$post->created_at}} by {{$post-> user ->name}} at {{ $post->branch_name }}</small>
                     </div>
