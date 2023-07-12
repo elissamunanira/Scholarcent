@@ -183,8 +183,9 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $title, $id)
+    public function update(Request $request, $id)
     {
+
         $this -> validate($request , [
             'title' => 'required',
             'body' => 'required'
@@ -237,7 +238,7 @@ class PostsController extends Controller
         if ($branch_details) {
             $branch_name = $branch_details->branch_name;
 
-            $post = Post::where('title', $title)->firstOrFail();
+            $post = Post::find($id);
 
             $post->branch_name = $branch_name;
             $post->title = $request->input('title');
@@ -256,7 +257,7 @@ class PostsController extends Controller
             }
 
             // If $branch_details is null, continue with updating the other post details
-            $post = Post::where('title', $title)->firstOrFail();
+            $post = Post::find($id);
 
             $post->title = $request->input('title');
             $post->body = $request->input('body');

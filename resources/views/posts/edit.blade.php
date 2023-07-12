@@ -5,7 +5,7 @@
 
   <h1>Edit Post</h1>
 
-  <form action="{{ url('posts/'.$post->title) }}" method="post" enctype="multipart/form-data">
+  <form action="{{ url('posts/'.$post->id) }}" method="post" enctype="multipart/form-data">
      {{csrf_field()}}
      @method("PATCH")
          <div class="form-group col-md-6">
