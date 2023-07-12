@@ -25,7 +25,10 @@ Route::get('/', [App\Http\Controllers\PageController::class, 'index']);
 Route::post('/posts/{post}/comments', 'App\Http\Controllers\CommentsController@store');
 
 
-Route::resource('posts', 'App\Http\Controllers\PostsController');
+
+
+
+Route::resource('posts', 'App\Http\Controllers\PostsController')->parameters(['posts' =>'title',]);
 Route::resource('branches', 'App\Http\Controllers\BranchController');
 
 Route::get('/abouts', [App\Http\Controllers\PageController::class, 'about']);
