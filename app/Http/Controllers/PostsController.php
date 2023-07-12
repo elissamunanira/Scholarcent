@@ -136,13 +136,13 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($title)
+    public function show($id)
     {
         //
         $recentPosts = Post::orderBy('created_at','desc')->paginate(4);
         $posts = Post::orderBy('created_at','desc')->paginate(4);
         $branches = Branch::all();
-        $post = Post::find($title);
+        $post = Post::find($id);
         return view('home.single',compact('posts','recentPosts','branches','post'));
     }
 
