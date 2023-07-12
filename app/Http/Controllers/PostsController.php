@@ -157,7 +157,7 @@ class PostsController extends Controller
         //
         // $postInfo = Post::find($id);
         $branches = Branch::all();
-        $post = Post::find($title);
+        $post = Post::where('title', $title)->firstOrFail();
 
         //check for the correct user
 
