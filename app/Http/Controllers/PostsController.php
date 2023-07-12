@@ -183,7 +183,7 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $id, $title)
     {
 
         $this -> validate($request , [
@@ -238,7 +238,7 @@ class PostsController extends Controller
         if ($branch_details) {
             $branch_name = $branch_details->branch_name;
 
-            $post = Post::find($id);
+            $post = Post::find($title);
 
             $post->branch_name = $branch_name;
             $post->title = $request->input('title');
@@ -257,7 +257,7 @@ class PostsController extends Controller
             }
 
             // If $branch_details is null, continue with updating the other post details
-            $post = Post::find($id);
+            $post = Post::find($title);
 
             $post->title = $request->input('title');
             $post->body = $request->input('body');
@@ -278,9 +278,9 @@ class PostsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($title)
     {
-        $post = Post::find($id);
+        $post = Post::find($title);
 
         if(auth()->user()->roles){
             foreach(auth()->user()->roles as $role){
